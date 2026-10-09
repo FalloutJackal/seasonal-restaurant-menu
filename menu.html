@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dinner Menu | Juniper & Hearth — Peoria, AZ</title>
+    <script src="biggest.js"></script>
+  </head>
+  <body>
+    <!-- 1. Keyboard shortcut and primary navigation -->
+    <a class="skip-link" href="#menu">Skip to menu</a>
+
+    <header class="site-header">
+      <p class="site-header__brand">Juniper &amp; Hearth</p>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#menu">Menu</a></li>
+          <li><a class="site-nav__link" href="#approach">Our Approach</a></li>
+          <li><a class="site-nav__link" href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 2. Menu introduction; tabindex allows skip-link focus without a Tab stop. -->
+    <main class="menu" id="menu" tabindex="-1">
+      <header class="menu-intro">
+        <h1 class="menu-intro__title">Seasonal Dinner Menu</h1>
+
+        <p class="menu-intro__location">
+          Autumn <span aria-hidden="true">·</span> Peoria, Arizona
+        </p>
+
+        <p class="menu-intro__description">
+          Our menu follows the rhythm of the desert season: bright citrus,
+          slow-roasted vegetables, open-fire cooking, and ingredients treated
+          with patience.
+        </p>
+
+        <p class="menu-intro__note">
+          <em>Dishes may change as local availability shifts.</em>
+        </p>
+      </header>
+
+      <!-- 3. Four menu cards: two columns on larger screens, one on smaller screens. -->
+      <div class="menu__cards">
+        <section class="menu-card" aria-labelledby="course-1">
+          <h2 class="menu-card__title" id="course-1">First Course</h2>
+
+          <dl class="menu-card__items">
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Charred Carrots</span>
+                <span class="menu-card__price">
+                  <span class="visually-hidden">Price: </span>$13</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Whipped feta, toasted pepitas, citrus, and chile oil.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Roasted Squash Soup</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$12</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Brown butter, desert sage, apple, and sourdough crumbs.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Little Gem Salad</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$14</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Herb dressing, radish, aged cheese, and sunflower seeds.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Grilled Flatbread</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$11</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Roasted garlic, rosemary, sea salt, and cultured butter.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="menu-card" aria-labelledby="course-2">
+          <h2 class="menu-card__title" id="course-2">From the Hearth</h2>
+
+          <dl class="menu-card__items">
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Sonoran Chicken</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$28</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Wood-roasted chicken, white beans, preserved lemon, and natural
+                jus.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Braised Short Rib</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$34</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Creamy polenta, ember-roasted onion, greens, and red-wine
+                reduction.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Desert Mushroom Plate</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$26</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Roasted mushrooms, farro, smoked tomato, herbs, and crispy
+                shallot.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Market Fish</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$32</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Seasonal vegetables, charred citrus, green olive, and fennel
+                broth.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="menu-card" aria-labelledby="course-3">
+          <h2 class="menu-card__title" id="course-3">Something Sweet</h2>
+
+          <dl class="menu-card__items">
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Olive Oil Cake</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$10</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Orange, rosemary sugar, and whipped mascarpone.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Dark Chocolate Tart</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$11</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Espresso, sea salt, cocoa nibs, and crème fraîche.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Apple and Oat Crisp</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$10</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Brown sugar oat topping and vanilla bean ice cream.
+              </dd>
+            </div>
+
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name">Citrus Sorbet</span>
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$8</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                Seasonal citrus, mint, and sparkling wine granita.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section
+          class="menu-card menu-card--featured"
+          aria-labelledby="course-4">
+          <h2 class="menu-card__title" id="course-4">Featured Experience</h2>
+
+          <dl class="menu-card__items">
+            <div class="menu-card__item">
+              <dt class="menu-card__item-heading">
+                <span class="menu-card__name"
+                  >Chef's Table: Sonoran Harvest</span
+                >
+                <span class="menu-card__price"
+                  ><span class="visually-hidden">Price: </span>$68 per
+                  guest</span
+                >
+              </dt>
+
+              <dd class="menu-card__description">
+                A five-course menu shaped by the week's best ingredients and
+                served to the entire table. Optional beverage pairing available.
+              </dd>
+
+              <dd class="menu-card__notice">
+                <strong>Reservations require 48 hours' notice.</strong>
+              </dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+
+      <!-- 4. Separate information cards, outside the four-card menu container. -->
+      <div class="menu__information">
+        <section
+          class="info-card"
+          id="approach"
+          aria-labelledby="approach-title"
+          tabindex="-1">
+          <h2 class="info-card__title" id="approach-title">Our Approach</h2>
+
+          <p>
+            Juniper &amp; Hearth is built around careful sourcing, direct
+            relationships, and the belief that restraint often reveals more than
+            excess. We cook with the season, preserve what is abundant, and
+            allow each ingredient to remain recognizable on the plate.
+          </p>
+        </section>
+
+        <section
+          class="info-card"
+          id="visit"
+          aria-labelledby="visit-title"
+          tabindex="-1">
+          <h2 class="info-card__title" id="visit-title">Come Be Our Guest</h2>
+
+          <h3 class="info-card__name">Juniper &amp; Hearth</h3>
+
+          <address class="info-card__address">
+            <p>123 Deer Valley Rd.</p>
+            <p>Peoria, Arizona 55555</p>
+          </address>
+
+          <dl class="info-card__hours">
+            <dt class="info-card__hours-label">Hours</dt>
+
+            <dd>
+              Thursday-Sunday: <time datetime="17:00">5:00 PM</time>&ndash;<time
+                datetime="22:00"
+                >10:00 PM</time
+              >
+            </dd>
+          </dl>
+
+          <a class="info-card__reservation-link" href="reservation.html">
+            Reserve a Table
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <!-- 5. Availability and attribution; no empty placeholder links. -->
+    <footer class="site-footer">
+      <p><strong>Menu and availability are subject to change.</strong></p>
+
+      <p>2026 &copy; Juniper &amp; Hearth</p>
+
+      <p>
+        Inspired by <a href="https://www.frontendmentor.io/">Frontend Mentor</a>
+      </p>
+
+      <p>Designed and coded by <a href="#">Marco Bolden</a></p>
+    </footer>
+  </body>
+</html>
